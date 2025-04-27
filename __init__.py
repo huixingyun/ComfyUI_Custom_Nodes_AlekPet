@@ -288,7 +288,7 @@ WEB_DIRECTORY = f"./{extension_dirs[0]}"
 
 
 # Install nodes
-installNodes()
+# installNodes()
 
 # Import classes nodes and add in mappings
 # ArgosTranslateNode
