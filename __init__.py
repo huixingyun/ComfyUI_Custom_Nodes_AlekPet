@@ -289,6 +289,16 @@ WEB_DIRECTORY = f"./{extension_dirs[0]}"
 
 # Install nodes
 # installNodes()
+for nodeElement in os.listdir(extension_folder):
+    if (
+        not nodeElement.startswith("__")
+        and nodeElement.endswith("Node")
+        and os.path.isdir(os.path.join(extension_folder, nodeElement))
+    ):
+        nodes_list_dict[nodeElement] = {
+            "error": None,
+            "message": f"Node -> {nodeElement}\033[92m",
+        }
 
 # Import classes nodes and add in mappings
 # ArgosTranslateNode
